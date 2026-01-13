@@ -43,7 +43,7 @@ const Header: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-0 flex justify-between items-center">
                 {/* logo-trns */}
                 <div className="flex items-center">
-                    <img src={logo} alt="Codynix IT Lab" className="h-20 w-auto rounded-lg" />
+                    <img src={logo} alt="Codynix IT Lab" className="sm:h-20 h-10 w-auto rounded-lg" />
 
                 </div>
 
