@@ -2,6 +2,7 @@ import { Logs, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { PopupModal } from "react-calendly";
 import logo from '../assets/desktop-logo-transparent.png';
+import { ModeToggle } from './ModeToggle';
 
 const Header: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -101,6 +102,7 @@ const Header: React.FC = () => {
                         <div className="w-2 h-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     </a>
                 ))}
+                <ModeToggle />
                 <div className={`pt-4 border-t border-border/50 transition-all duration-500 transform ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
                     style={{ transitionDelay: `${navLinks.length * 75}ms` }}>
                     <button
