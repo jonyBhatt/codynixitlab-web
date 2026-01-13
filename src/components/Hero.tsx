@@ -19,10 +19,10 @@ const Hero: React.FC = () => {
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-4 py-2 rounded-full text-primary text-sm font-medium mb-8 animate-fade-in-up">
                     <Layers size={16} />
-                    <span>Innovating the Digital Future</span>
+                    <span>Innovating The Digital Future</span>
                 </div>
 
-                <h1 className="text-2xl md:text-7xl font-extrabold text-foreground tracking-tight mb-8 leading-tight">
+                <h1 className="text-4xl md:text-7xl font-extrabold text-foreground tracking-tight mb-8 leading-tight">
                     Building Scalable <br className="hidden md:block" />
                     <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                         Digital Solutions

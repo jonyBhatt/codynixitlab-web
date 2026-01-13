@@ -40,9 +40,9 @@ const Header: React.FC = () => {
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-5'
                 }`}
         >
-            <div className="container mx-auto px-6 flex justify-between items-center">
+            <div className="container mx-auto px-4 sm:px-0 flex justify-between items-center">
                 {/* logo-trns */}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center">
                     <img src={logo} alt="Codynix IT Lab" className="h-20 w-auto rounded-lg" />
 
                 </div>
