@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
 
                 <h1 className="text-4xl md:text-7xl font-extrabold text-foreground tracking-tight mb-8 leading-tight">
                     Building Scalable <br className="hidden md:block" />
-                    <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-primary to-accent-foreground/20 dark:from-primary dark:via-chart-3 dark:to-chart-4 bg-clip-text text-transparent">
                         Digital Solutions
                     </span>
                     {' '}for the Future

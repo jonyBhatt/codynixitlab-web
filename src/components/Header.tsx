@@ -59,6 +59,8 @@ const Header: React.FC = () => {
                             {link.name}
                         </a>
                     ))}
+                    <ModeToggle />
+
                     <button
                         onClick={() => setIsOpen(true)}
                         className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2 rounded-full font-medium transition-colors shadow-lg shadow-primary/20 cursor-pointer"
@@ -102,7 +104,6 @@ const Header: React.FC = () => {
                         <div className="w-2 h-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     </a>
                 ))}
-                <ModeToggle />
                 <div className={`pt-4 border-t border-border/50 transition-all duration-500 transform ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
                     style={{ transitionDelay: `${navLinks.length * 75}ms` }}>
                     <button
