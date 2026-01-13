@@ -136,7 +136,7 @@ const Portfolio: React.FC = () => {
                                         </h3>
 
                                         {/* Description */}
-                                        <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                                        <p className="text-muted-foreground text-lg leading-relaxed mb-6 truncate line-clamp-2">
                                             {project.description}
                                         </p>
 
