@@ -21,7 +21,7 @@ const About: React.FC = () => {
 
                     <div className="mt-12 flex flex-wrap justify-center gap-4">
                         {['Innovation', 'Integrity', 'Excellence', 'Collaboration'].map((value) => (
-                            <span key={value} className="px-6 py-2 bg-card rounded-full border border-border text-foreground font-medium shadow-sm">
+                            <span key={value} className="px-6 py-2 bg-accent dark:bg-card/95 dark:shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)] rounded-full border border-primary/50 text-foreground font-medium shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)]  backdrop-blur-sm transition-colors hover:bg-secondary/80 dark:hover:bg-accent/10">
                                 {value}
                             </span>
                         ))}

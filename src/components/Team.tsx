@@ -126,7 +126,7 @@ export default function Team() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="p-6 bg-[linear-gradient(to_top,_oklch(0.85_0.05_252.22)_0%,_var(--card)_70%)]">
+                            <div className="p-6 bg-gradient-to-b from-secondary via-accent/60 to-primary/20 dark:from-card dark:via-card dark:to-primary/20">
                                 <h3 className="text-xl font-bold text-foreground mb-1">{member.name}</h3>
                                 <p className="text-primary font-medium">{member.role}</p>
                             </div>
