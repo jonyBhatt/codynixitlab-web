@@ -2,9 +2,13 @@ import { Logs, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { PopupModal } from "react-calendly";
 import logo from '../assets/desktop-logo-transparent.png';
+import DarkLogo2 from '../assets/logo-dark-theme2.png'
 import { ModeToggle } from './ModeToggle';
+import { useTheme } from './ThemeProvider';
 
 const Header: React.FC = () => {
+    const { theme } = useTheme()
+
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +48,15 @@ const Header: React.FC = () => {
             <div className="container mx-auto px-6 flex justify-between items-center">
                 {/* logo-trns */}
                 <div className="flex items-center">
-                    <img src={logo} alt="Codynix IT Lab" className="sm:h-20 h-10 w-auto rounded-lg" />
+                    {
+                        theme === "light" ? <>
+                            <img src={logo} alt="Codynix IT Lab" className="sm:h-20 h-10 w-auto rounded-lg" />
+
+                        </> : <>
+                            <img src={DarkLogo2} alt="Codynix IT Lab" className="sm:h-20 h-10 w-auto rounded-lg" />
+
+                        </>
+                    }
 
                 </div>
 

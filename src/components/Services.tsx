@@ -37,32 +37,21 @@ const services = [
 const Services: React.FC = () => {
     return (
         <section id="services" className="py-24 bg-background">
+
             <div className="container mx-auto px-6">
-                <div className="text-center mb-20">
-                    <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 tracking-tight">Our Expertise</h2>
-                    <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
-                        We provide comprehensive IT solutions tailored to meet the unique needs of your business.
-                    </p>
-                </div>
+
+
+
 
                 {/* Two Column Layout - Left: sticky description, Right: stacking cards */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
                     {/* Left Column - Sticky Content */}
                     <div className="lg:sticky lg:top-32 h-fit">
-
-                        <div className="flex flex-col gap-5 items-center sm:items-stretch">
-                            <div className="flex items-center gap-4">
-                                <div className="w-2.5 h-2.5 bg-primary rounded-full shadow-[0_0_10px_var(--primary-foreground)]"></div>
-                                <span className="text-foreground font-medium tracking-tight">3+ Years of Experience</span>
-                            </div>
-                            <div className="flex items-center gap-4">
-                                <div className="w-2.5 h-2.5 bg-primary rounded-full shadow-[0_0_10px_var(--primary-foreground)]"></div>
-                                <span className="text-foreground font-medium tracking-tight">200+ Projects Delivered</span>
-                            </div>
-                            <div className="flex items-center gap-4">
-                                <div className="w-2.5 h-2.5 bg-primary rounded-full shadow-[0_0_10px_var(--primary-foreground)]"></div>
-                                <span className="text-foreground font-medium tracking-tight">95% Client Satisfaction</span>
-                            </div>
+                        <div className="text-center mb-20">
+                            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 tracking-tight">Our Expertise</h2>
+                            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+                                We provide comprehensive IT solutions tailored to meet the unique needs of your business.
+                            </p>
                         </div>
                     </div>
 
@@ -78,7 +67,7 @@ const Services: React.FC = () => {
                                 }}
                             >
                                 <div
-                                    className="group p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden bg-card"
+                                    className="group p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden "
                                     style={{
                                         transform: `scale(${1 - index * 0.02})`,
                                         transformOrigin: 'top center',
@@ -86,7 +75,7 @@ const Services: React.FC = () => {
                                     }}
                                 >
                                     {/* Solid Card Background */}
-                                    <div className="absolute inset-0 bg-card -z-10"></div>
+                                    <div className="absolute inset-0 bg-card  -z-10 bg-gradient-to-br group-hover:from-secondary/80 group-hover:to-accent/10 transition-colors duration-500 ease-in-out"></div>
 
                                     {/* Blue Gradient Overlay */}
                                     <div
@@ -98,7 +87,7 @@ const Services: React.FC = () => {
                                     ></div>
 
                                     <div className="relative z-10">
-                                        <div className="mb-8 p-5 bg-gradient-to-br from-primary/10 to-accent/5 rounded-2xl w-fit group-hover:from-primary/20 group-hover:to-accent/10 transition-colors duration-300">
+                                        <div className="mb-8 p-5 bg-gradient-to-br from-primary/10 to-accent/5 rounded-2xl w-fit group-hover:from-primary/25 group-hover:to-accent/10 transition-colors duration-300">
                                             {service.icon}
                                         </div>
                                         <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4 tracking-tight">{service.title}</h3>

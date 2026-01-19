@@ -98,7 +98,7 @@ export default function Team() {
 
                 <div
                     ref={scrollContainerRef}
-                    className="flex gap-6 overflow-x-auto pb-12 snap-x snap-mandatory scrollbar-hide -mx-4 px-4"
+                    className="flex gap-6 overflow-x-auto pb-12 snap-x snap-mandatory scrollbar-hide md:-mx-4 mx-4"
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
                     {teamMembers.map((member, index) => (

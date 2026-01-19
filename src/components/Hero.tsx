@@ -23,15 +23,18 @@ const Hero: React.FC = () => {
                 </div>
 
                 <h1 className="text-4xl md:text-7xl font-extrabold text-foreground tracking-tight mb-8 leading-tight">
-                    Building Scalable <br className="hidden md:block" />
+                    We Build <br className="" />
                     <span className="bg-gradient-to-r from-primary to-accent-foreground/20 dark:from-primary dark:via-chart-3 dark:to-chart-4 bg-clip-text text-transparent">
-                        Digital Solutions
+                        High Converting Digital Products
                     </span>
-                    {' '}for the Future
+                    <br />
+                    {' '}that Grow  Businesses
                 </h1>
 
+
+
                 <p className="text-xs md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
-                    Codynix IT Lab delivers cutting-edge software, web platforms, and mobile experiences designed to transform your business and engage your audience.
+                    Codynix IT Lab doesn’t just build software we design complete business systems that turn visitors into customers through powerful software, web platforms, and mobile experiences.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
