@@ -5,39 +5,38 @@ import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/module
 
 // Import Swiper styles (v11+ includes all module styles in base CSS)
 import 'swiper/css';
+import greenwayImg from '../assets/project-showcase/Greenway-Academy.png';
+import maillotImg from '../assets/project-showcase/maillot.png';
+import visitSylhetImg from '../assets/project-showcase/Visit-Sylhet-Official-Tourist-Guide.png';
 const projects = [
     {
-        title: 'AI-Powered Analytics Dashboard',
-        category: 'Web Application',
-        description: 'A comprehensive analytics platform featuring real-time data visualization, predictive insights, and interactive dashboards powered by machine learning.',
-        tags: ['React', 'TypeScript', 'D3.js'],
+        title: 'Greenway Academy',
+        category: 'Website',
+        description: 'An educational website for Greenway Academy showcasing courses, events, and community resources.',
+        tags: ['React', 'Vercel'],
         year: '2024',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600',
+        image: greenwayImg,
+        url: 'https://greenway-ruby.vercel.app/',
     },
     {
-        title: 'HealthCare Mobile App',
-        category: 'Mobile Development',
-        description: 'A patient-centric mobile application enabling seamless appointment booking, health records management, and telemedicine consultations.',
-        tags: ['React Native', 'Firebase'],
-        year: '2024',
-        image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1600',
-    },
-    {
-        title: 'E-Commerce Platform',
+        title: 'Maiilot (YourMaillot)',
         category: 'E-Commerce',
-        description: 'A modern online marketplace with advanced product filtering, secure payment processing, and personalized shopping experiences.',
-        tags: ['Next.js', 'Stripe', 'Tailwind'],
-        year: '2023',
-        image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=1600',
+        description: 'A modern online storefront and brand site for Maiilot.',
+        tags: ['Shop', 'E-Commerce'],
+        year: '2024',
+        image: maillotImg,
+        url: 'https://yourmaillot.com/',
     },
     {
-        title: 'Smart Home IoT Platform',
-        category: 'IoT Solutions',
-        description: 'An integrated ecosystem for home automation, connecting and controlling smart devices through a unified mobile and web interface.',
-        tags: ['IoT', 'Cloud', 'Mobile'],
+        title: 'Visit Sylhet — Official Tourist Guide',
+        category: 'Tourism',
+        description: 'Official tourist guide for Sylhet highlighting destinations, itineraries, and travel resources.',
+        tags: ['Travel', 'Guide'],
         year: '2024',
-        image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=1600',
+        image: visitSylhetImg,
+        url: 'https://k2yfhhxtalfiy.ok.kimi.link/',
     },
+
     {
         title: 'Brand Identity System',
         category: 'Branding & Design',
@@ -153,10 +152,15 @@ const Portfolio: React.FC = () => {
                                         </div>
 
                                         {/* CTA Button */}
-                                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full font-medium transition-all duration-300 group">
+                                        <a
+                                            href={project.url ?? '#'}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full font-medium transition-all duration-300 group"
+                                        >
                                             View Project
                                             <ExternalLink size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </SwiperSlide>
