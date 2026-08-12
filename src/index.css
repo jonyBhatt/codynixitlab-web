@@ -150,3 +150,37 @@ h6 {
     @apply bg-background text-foreground;
   }
 }
+
+/* Loading screen + animations */
+.loading-screen {
+  pointer-events: all;
+}
+.loading-logo {
+  animation: logo-bounce 1000ms cubic-bezier(.22,.9,.2,1) infinite;
+}
+.loader-ring .path {
+  stroke: var(--primary);
+  stroke-linecap: round;
+  stroke-dasharray: 90;
+  stroke-dashoffset: 60;
+  animation: rotate-path 1.4s linear infinite;
+}
+
+@keyframes rotate-path {
+  0% { transform: rotate(0deg); stroke-dashoffset: 90; }
+  50% { transform: rotate(180deg); stroke-dashoffset: 30; }
+  100% { transform: rotate(360deg); stroke-dashoffset: 90; }
+}
+
+@keyframes logo-bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px) scale(1.02); }
+  100% { transform: translateY(0); }
+}
+
+/* subtle fade/float used across components */
+.animate-fade { animation: fade-in 900ms ease both; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
+
+/* pointer GPU-optimized transform helper */
+.will-change-transform { will-change: transform; }
