@@ -5,7 +5,7 @@ import logo from '../assets/logo-trns.png';
 const Footer: React.FC = () => {
     return (
         <footer className="bg-primary/10 border-t border-primary/20 text-muted-foreground pt-16 pb-8">
-            <div className="container mx-auto px-6">
+            <div className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
                     <div>

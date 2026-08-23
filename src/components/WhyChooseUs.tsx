@@ -237,7 +237,7 @@ const TraceLine: FC<TraceLineProps> = ({
     <>
       {/* Desktop: horizontal trace, centered exactly on the first and last node */}
       <svg
-        className="pointer-events-none absolute left-0 -top-3 hidden w-full md:block"
+        className="pointer-events-none absolute left-0 top-0 hidden w-full md:block"
         height={horizontal.y + 4}
         viewBox={`0 0 ${geometry.width} ${horizontal.y + 4}`}
         preserveAspectRatio="none"
@@ -252,7 +252,7 @@ const TraceLine: FC<TraceLineProps> = ({
         <path
           ref={desktopPathRef}
           d={`M ${horizontal.x1} ${horizontal.y} L ${horizontal.x2} ${horizontal.y}`}
-          stroke="#FF8A3D"
+          stroke="#DDD"
           strokeWidth="2"
           fill="none"
         />
@@ -319,7 +319,7 @@ const ProcessStepCard: FC<ProcessStepCardProps> = ({
         className={[
           "absolute left-0 top-0 flex h-14 w-14 items-center justify-center rounded-full border transition-colors duration-500 md:static md:mb-2",
           isActive
-            ? "border-[#FF8A3D] bg-[#1B2A44] text-[#FF8A3D]"
+            ? "border-gray-300/60 bg-[#1B2A44] text-white"
             : "border-[#2A3F5F] bg-[#142642] text-[#5A7099]",
         ].join(" ")}
         aria-hidden="true"
