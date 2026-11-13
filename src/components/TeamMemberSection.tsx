@@ -34,7 +34,7 @@ const team: TeamMember[] = [
     bio: "Leads the vision, steers company strategy, and ensures every product decision aligns with customer impact.",
     image: CEO,
     accent: "blue",
-    socials: { linkedin: "#", twitter: "#" },
+    socials: { linkedin: "https://www.linkedin.com/in/biplobdebnath/", twitter: "#" },
   },
   {
     id: "02",
@@ -44,7 +44,7 @@ const team: TeamMember[] = [
     bio: "Sets the technical vision, scales engineering systems, and ensures every product is built with long-term reliability in mind.",
     image: CTO,
     accent: "green",
-    socials: { twitter: "#", linkedin: "#" },
+    socials: { twitter: "#", linkedin: "https://www.linkedin.com/in/jony-bhatt-42335117a" },
   },
   {
     id: "03",
