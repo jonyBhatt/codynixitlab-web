@@ -7,6 +7,7 @@ import CTO from "@/assets/cto.jpeg";
 import COO from "@/assets/lead.jpeg";
 import ProductManager from "@/assets/productmanager.jpeg";
 import Intern from "@/assets/intern.jpeg";
+import Sales from "@/assets/sales.jpeg";
 
 // ---------------------------------------------------------------------------
 // Data — strictly untouched
@@ -38,7 +39,7 @@ const team: TeamMember[] = [
   {
     id: "02",
     name: "Jony Bhattacharjee",
-    role: "CO-FOUNDER & CTO",
+    role: "CTO",
     file: "jony.cto.ts",
     bio: "Sets the technical vision, scales engineering systems, and ensures every product is built with long-term reliability in mind.",
     image: CTO,
@@ -48,7 +49,7 @@ const team: TeamMember[] = [
   {
     id: "03",
     name: "Pritom Dam Rahul",
-    role: "CO-FOUNDER & COO",
+    role: "COO",
     file: "pritom.coo.js",
     bio: "Aligns operations, growth, and execution so teams move fast without losing focus.",
     image: COO,
@@ -70,6 +71,16 @@ const team: TeamMember[] = [
   },
   {
     id: "05",
+    name: "Shagor Ghosh",
+    role: "Head of sales",
+    file: "Shagor.design.fig",
+    bio: "Drives revenue growth, builds client relationships, and turns market opportunities into success.",
+    image: Sales,
+    accent: "amber",
+    socials: { linkedin: "#", twitter: "#" },
+  },
+  {
+    id: "06",
     name: "Anando Das Utso",
     role: "Backend Developer",
     file: "anondo.api.py",
@@ -233,7 +244,6 @@ const SpotlightCard: React.FC<{ member: TeamMember; index: number }> = ({
                 className={`rounded-lg ${theme.bg} p-4 border border-white/5`}
               >
                 <p className="font-[JetBrains_Mono,monospace] text-sm leading-relaxed text-[#A1A9BB]">
-                  <span className={theme.text}>$ </span>
                   {member.bio}
                   <span
                     className={`inline-block w-2 h-4 ml-1 align-middle animate-pulse ${theme.bg} border-l border-${theme.text.split("-")[1]}-500`}
