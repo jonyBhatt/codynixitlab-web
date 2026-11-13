@@ -499,7 +499,7 @@ export default function Hero() {
               </div>
               <div className="text-right">
                 <div className="text-sm font-bold text-white">
-                  <CountUp target={578} suffix="M+" />
+                  <CountUp target={30} suffix="+" />
                 </div>
                 <div className="text-[10px] font-light tracking-wider text-gray-400">
                   Clients Active
